@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Catatan Simbahhh</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Catatan Simbahhh</h1>
+    
+    <form id="noteForm">
+      <input type="hidden" id="noteId">
+      <input type="text" id="judul" placeholder="Judul catatan" required>
+      <textarea id="isi" placeholder="Isi catatan..." required></textarea>
+      <button type="submit" id="submitBtn">Tambah Catatan</button>
+    </form>
+
+    <h2>Daftar Catatan</h2>
+    
+    <table id="notesTable">
+      <thead>
+        <tr>
+          <th>No</th>
+          <th>Judul</th>
+          <th>Isi</th>
+          <th>Tanggal Dibuat</th>
+          <th>Aksi</th>
+        </tr>
+      </thead>
+      <tbody id="notesBody">
+        <!-- Data akan diisi oleh JavaScript -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+### Get semua catatan
+GET http://localhost:3000/api/notes
+
+### Tambah catatan
+POST http://localhost:3000/api/notes
+Content-Type: application/json
+
+{
+  "judul": "Belajar Express",
+  "isi": "Hari ini belajar fullstack notes app"
+}
+
+### Edit catatan (ganti ID)
+PUT http://localhost:3000/api/notes/1
+Content-Type: application/json
+
+{
+  "judul": "Belajar Express - Updated",
+  "isi": "Sudah diedit"
+}
+
+### Hapus catatan
+DELETE http://localhost:3000/api/notes/1
