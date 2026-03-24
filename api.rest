@@ -6,16 +6,16 @@ POST http://localhost:3000/api/notes
 Content-Type: application/json
 
 {
-  "judul": "Belajar Express",
-  "isi": "Hari ini belajar fullstack notes app"
+  "judul": "Testing",
+  "isi": "Coba Isi Catatan."
 }
 
 ### Edit catatan (ganti ID)
-PUT http://localhost:3000/api/notes/1
+PUT http://localhost:3000/api/notes/7
 Content-Type: application/json
 
 {
-  "judul": "Belajar Express - Updated",
+  "judul": "Testing - Updated",
   "isi": "Sudah diedit"
 }
 
